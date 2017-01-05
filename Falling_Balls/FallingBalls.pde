@@ -24,50 +24,17 @@ void draw(){
         if (balls.get(i).loc.y > height-20){
             balls.get(i).acc.y = 0;
             balls.get(i).vel.y = 0;
-        }
-        
+        }        
     }
     if (balls.size() > 5){
         
         balls.remove(0);
-    }
-    
+    }    
 }
 
 void mousePressed(){
     
     if (mousePressed){
         add = true;
-    }
-    
-}
-
-
-class Ball{
-    
-    PVector loc, vel, acc;
-    
-    Ball(float x_, float y_){
-        
-        x = x_;
-        y = y_;
-        loc = new PVector(x, y);
-        vel = new PVector(0, 0);
-        acc = new PVector(0, 0.05);
-        
-    }
-    
-    void display(){
-        
-        fill (100);
-        ellipseMode (CENTER);
-        ellipse (loc.x, loc.y, 40, 40);
-        
-    }
-    
-    void fall(){
-        
-        vel.add(acc);
-        loc.add(vel);
     }    
 }
