@@ -1,6 +1,7 @@
 class Ball{
     
     PVector loc, vel, acc;
+    float x, y;
     
     Ball(float x_, float y_){
         
