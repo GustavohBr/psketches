@@ -8,7 +8,7 @@ void draw(){
     background(0);
     float prob = random(1);
     if (prob < 0.03){ //There's 3% chance of adding a new firework to the screen
-        fw.add(new Firework);
+        fw.add(new Firework());
     }
     for (int i = 0; i < fw.size(); i++){
         fw.get(i).show();
