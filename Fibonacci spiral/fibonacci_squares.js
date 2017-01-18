@@ -9,7 +9,7 @@ function setup() {
 
 function draw() {
     background(150);
-    translate(width / 2, height / 2);
+    translate(145, 160);
     squares()
 }
 
