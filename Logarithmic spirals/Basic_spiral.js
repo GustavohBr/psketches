@@ -9,16 +9,16 @@ function setup() {
     b = 0.2;  //the shape of the spiral
     t = 0;
     sliderA = createSlider(0, 100, 100);
-	  sliderA.position(50, 415);
+    sliderA.position(50, 415);
     sliderA.style('width', '100px');
-		sliderB = createSlider(0, 100, 100);
-	  sliderB.position(200, 415);
+    sliderB = createSlider(0, 100, 100);
+    sliderB.position(200, 415);
     sliderB.style('width', '100px');
 }
 
 function draw() {
-		a = sliderA.value();
-		b = map(sliderB.value(), 0, 100, 0, 1);
+    a = sliderA.value();
+    b = map(sliderB.value(), 0, 100, 0, 1);
     background(255);
     translate(width / 2, height / 2);
     noFill();
